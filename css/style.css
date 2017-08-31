@@ -10,6 +10,49 @@ body {
 a {
     text-decoration: none;
 }
+.visually-hiden{
+    display: none;
+}
+.active{
+    color: aqua;
+}
+/* button*/
+.btn {
+    display: block;
+    font-family: inherit;
+    color: #ffffff;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    text-transform: uppercase;
+}
+.btn:active {
+    color: rgba(255,255,255, 0.3);
+}
+.btn-blue {
+    background-color: #81b3d2;
+}
+.btn-blue:hover,
+.btn-blue:focus {
+    background-color: #669ec0;
+}
+
+.btn-blue:active {
+    background-color: #5496bd;
+}
+
+.btn-brown {
+    background-color: #766357;
+}
+.btn-brown:hover,
+.btn-brown:focus {
+    background-color: #604e43;
+}
+
+}
+.btn-brown:active {
+    background-color: #503e33;
+}
 
 .main-navigation {
     font-size: 14px;
@@ -29,6 +72,9 @@ a {
 
 .main-navigation a:active {
     color: #e9e9ea;
+}
+.nav-link-active {
+    color: red;
 }
 
 .intro {
@@ -90,80 +136,30 @@ a {
     font-weight: 700;
 }
 
-.search-btn {
-    font: inherit;
-    text-align: center;
-    color: #ffffff;
-    vertical-align: middle;
-    text-transform: uppercase;
-    background-color: #766357;
-    border: none;
-    outline: none;
-}
-
-.search-btn:hover,
-.search-btn:focus {
-    background-color: #604e43;
-    border: none;
-    outline: none;
-}
-
-.search-btn:active {
-    color: #6a5b51;
-    background-color: #503e33;
-    border: none;
-    outline: none;
-}
-
-.search-form input: {
-    background-color: black;
-    outline: none;
+.search-form input {
+  box-sizing: border-box;
+  outline: 0;
+  border: 2px solid #f2f2f2;
+  background-color: #f2f2f2;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .search-form input:hover  {
-    background-color: #f7f7f7;
-    outline: none;
+  border: 2px solid #ebebeb;
+    background-color: #ebebeb;
+    outline: 0;
+    
 }
 
 .search-form input:focus  {
-    background-color: #f5f5f5;
-    outline: none;
-}
-
-.search-form input:active  {
-    border-color: #e9e9e9;
-    color: #ffffff;
-    background-color:#ffffff;
-    outline: none;
-}
-
-.search-btn-blue {
-    font: inherit;
-    text-align: center;
-    color: #ffffff;
-    vertical-align: middle;
-    text-transform: uppercase;
-    background-color: #a9cbe0;
-    border: none;
-    outline: none;
-}
-
-.search-btn-blue:hover,
-.search-btn-blue:focus {
-    color: #ffffff;
-    background-color: #669ec0;
-    border: none;
-    outline: none;
+    background-color: #ffffff;
+    outline: 0;
+    border: 2px solid #e5e5e5;
 }
 
 
-}
-.search-btn-blue:active {
-    color: #a9cbe0;
-    background-color: #5496bd;
-    border: none;
-    outline: none;
-}
 
 }
 .page-footer {
@@ -226,12 +222,16 @@ a {
     line-height: 26px;
     font-weight: 700;
 }
+
 .filter {
     background-color: #81b3d2;
     color: #ffffff;
-    background-image: url("img/filter-bg.jpg");
+    background-image: url("../img/filter-bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
+}
+.filter fieldset{
+    border: 0;
 }
 .filter-btn {
     color: #ffffff;
@@ -245,31 +245,6 @@ a {
     background-color: #ffffff;
     outline: none;
 }
-.btn-blue {
-    font: inherit;
-    text-align: center;
-    color: #ffffff;
-    vertical-align: middle;
-    text-transform: uppercase;
-    background-color: #a9cbe0;
-    border: none;
-    outline: none;
-}
-.btn-blue:hover,
-.btn-blue:focus {
-    color: #ffffff;
-    background-color: #669ec0;
-    border: none;
-    outline: none;
-}
-
-}
-.btn-blue:active {
-    color: #a9cbe0;
-    background-color: #5496bd;
-    border: none;
-    outline: none;
-}
 .rating-rate {
     text-align: center;
     color: black;
@@ -279,29 +254,4 @@ a {
     border: none;
     outline: none;
     text-decoration: none;
-}
-.btn-brown {
-    font: inherit;
-    text-align: center;
-    color: #ffffff;
-    vertical-align: middle;
-    text-transform: uppercase;
-    background-color: #766357;
-    border: none;
-    outline: none;
-}
-.btn-brown:hover,
-.btn-brown:focus {
-    color: #ffffff;
-    background-color: #604e43;
-    border: none;
-    outline: none;
-}
-
-}
-.btn-brown:active {
-    color: #6a5b51;
-    background-color: #503e33;
-    border: none;
-    outline: none;
 }
