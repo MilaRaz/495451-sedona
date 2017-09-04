@@ -8,14 +8,13 @@
 </head>
 
 <body>
-
-    <div class="container">
+<div class="container">
         <header class="page-header">
             <nav class="main-navigation">
-            <a href="#" class="nav-link">Информация</a> 
-            <a href="#" class="nav-link">Фото и видео</a>
-            <a href="#" class="nav-link">Карта штата</a>
-            <a href="hotels.html" class="nav-link-active">Гостиницы</a>
+                <a href="#" class="nav-link nav-link-left">Информация</a>
+                <a href="#" class="nav-link nav-link-left">Фото и видео</a>
+                <a href="#" class="nav-link nav-link-right">Карта штата</a>
+                <a href="hotels.html" class="nav-link nav-link-right active">Гостиницы</a>
             </nav>
             <a class="logo" href="index.html">
                 <img src="img/logo.png" width="138" height="70" alt="логотип седона">
@@ -25,7 +24,6 @@
             <section class="filter">
                 <h2 class="visually-hiden">Фильтр гостиниц</h2>
                 <form method="get" action="https://echo.htmlacademy.ru">
-                   <div class="filter-container">
                     <fieldset class="filter-infrastructure">
                         <legend>Инфраструктура:</legend>
                         <ul>
@@ -64,7 +62,6 @@
                         <legend>Стоимость в сутки (Р):</legend>
                         <button class="filter-btn" type="submit">Показать</button>
                     </fieldset>
-                    </div>
                 </form>
             </section>
             <section class="sort">
@@ -72,13 +69,13 @@
                 <span>Найдено: 3</span>
                 <ul class="sort-list">
                     <li class="sort-item">Сортировка:</li>
-                    <li class="sort-item">
+                    <li class="sort-item active">
                         <a href="#">по цене</a>
                     </li>
-                    <li class="sort-item">
+                    <li class="sort-item active">
                         <a href="#">по типу</a>
                     </li>
-                    <li class="sort-item">
+                    <li class="sort-item active">
                         <a href="#">по рейтингу</a>
                     </li>
                     <li class="sort-item sort-arrow">
@@ -156,10 +153,9 @@
                 <a href="https://htmlacademy.ru/" target="_blank"><img src="img/logo_html.png" width="115" height="41" alt="htmlacademy"></a>
             </div>
         </footer>
+
+
     </div>
-
-
-
 </body>
 
 </html>
